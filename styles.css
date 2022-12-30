@@ -1,0 +1,334 @@
+:root {
+    --background_color: #0c0c0c;
+    --rainDrop: #08d7ee;
+    --red: #ef0808;
+    --shadeBlue: #351dae;
+    --neon: #7f2bba;
+    --black: #3a312e;
+    --skin: #dbb94b;
+    --lamp: #f57017;
+    --lampShade:#a97b5d;
+    --moon:#F5F3CE;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, var(--background_color) 90%, white) ;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#raindrop {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    background: linear-gradient(to bottom, var(--rainDrop), transparent);
+    width: .25em;
+    height: 1.5em;
+    transform: rotate(340deg);
+    border-radius: 50% 50% 90% 90%;
+    animation: rainFall 0.7s linear infinite;
+    z-index: 2;
+}
+
+.boy {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 118vh;
+    z-index: 3;
+    top:20%;
+    overflow: hidden;  
+}
+
+#head {
+    position: absolute;
+    display: block;
+    width: 2.2em;
+    height: 2.3em;
+    background: var(--black);
+    border-radius: 50%;
+    transform: rotate(40deg);
+    z-index: 5;
+}
+
+#neck {
+    position: absolute;
+    display: block;
+    width: 0.7em;
+    height: 0.7em;
+    background: var(--skin);
+    transform: translate(20%, 170%);
+}
+
+#shirt {
+    position: absolute;
+    display: block;
+    width: 2.4em;
+    height: 2.3em;
+    background: var(--red);
+    transform: translate(5%, 110%);
+    border-radius: 25% 25% 5% 5% ;
+    z-index: 9;
+}
+
+
+#pant {
+    position: absolute;
+    display: block;
+    width: 2.3em;
+    height: 4em;
+    background: var(--shadeBlue);
+    transform: translate(5%, 140%);
+    border-radius: 10% 10% 10% 10%;
+    z-index: 6;
+}  
+#belt {
+    position: absolute;
+    display: block;
+    width: 2.8em;
+    height: .5em;
+    background: var(--black);
+    transform: translate(5%,785%);
+    border-radius: 25% ;
+    z-index: 10;
+}
+/*#hook {
+    position: absolute;
+    display: block;
+    width: .1em;
+    height: .3em;
+    background: var(--shadeBlue);
+    transform: translate(2%,1300%);
+    border-radius: 25% ;
+    z-index: 11;
+}*/
+#armLeft{
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: .7em;
+    background: var(--red);
+    transform: translate(-70%, 300%)rotate(330deg) ;
+    border-radius: 15% 25% 25% 25%;
+    z-index: 9;
+}
+
+#armRight {
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: .7em;
+    background: var(--red);
+    transform: translate(70%, 300%)rotate(30deg);
+    border-radius: 15% 25% 25% 25%;
+    z-index: 9;
+}
+
+#armLeftFront{
+    position: absolute;
+    display: block;
+    width: 1.6em;
+    height: 0.7em;
+    background: var(--skin);
+    transform: translate(-160%, 325%)rotate(20deg);
+    border-radius: 35% 40% 25% 35%;
+}
+
+ #armRightFront {
+    position: absolute;
+    display: block;
+    width: 1.6em;
+    height: 0.7em;
+    background: var(--skin);
+    transform: translate(160%, 325%)rotate(160deg);
+    border-radius: 35% 40% 25% 35%;
+}
+ #handleft {
+    position: absolute;
+    display: block;
+    width: 0.5em;
+    height: 1.5em;
+    background: var(--skin);
+    transform: translate(-750%, 140%)rotate(80deg);
+    border-radius: 70%;
+    animation: handMove 1s linear infinite ;
+}
+
+#handright {
+    position: absolute;
+    display: block;
+    width: 0.5em;
+    height: 1.5em;
+    background: var(--skin);
+    transform: translate(750%, 140%)rotate(100deg);
+    border-radius: 70%;
+    animation: handMove2 1s linear infinite ;
+}
+
+#legLeft {
+    position: absolute;
+    display: block;
+    width: 0.5em;
+    height: 1.7em;
+    background: var(--skin);
+    transform: translate(-120%, 460%);
+    border-radius: 35% 40% 25% 35%;
+    z-index: 3;
+}
+
+#legRight {
+    position: absolute;
+    display: block;
+    width: 0.5em;
+    height: 1.7em;
+    background: var(--skin);
+    transform: translate(120%, 460%);
+    border-radius: 35% 40% 25% 35%;
+    z-index: 3;
+}
+
+#leftFoot {
+    position: absolute;
+    display: block;
+    width: 0.8em;
+    height: 0.5em;
+    background: var(--black);
+    transform: translate(-90%,1700%);
+    border-radius: 30%;
+    z-index: 6;
+}
+
+#RightFoot {
+    position: absolute;
+    display: block;
+    width: 0.8em;
+    height: 0.5em;
+    background: var(--black);
+    transform: translate(90%,1700%);
+    border-radius: 30%;
+    z-index: 6;
+}
+.lampPole {
+    position: absolute;
+    display: block;
+    width: 0.3em;
+    height: 35em;
+    background: linear-gradient(to right,rgb(11, 10, 10),var(--black) );
+    left: 10%;
+    top: 32%;
+    z-index: 1;
+}
+
+.lamp {
+    position: absolute;
+    display: block;
+    width: 2em;
+    height: 1.5em;
+    background: linear-gradient(to bottom, var(--lamp), var(--lampShade));
+    border-radius: 1.7em;
+    left: 10%;
+    top: 29%;
+    z-index: 2;
+    animation: blurry 1s linear infinite;
+}
+.moon {
+    position: absolute;
+    display: block;
+    width: 4em;
+    height: 4.5em;
+    background: var(--moon);
+    border-radius:650px;
+    left: 25%;
+    top: 12%;
+    z-index: 2;
+}
+#umbrella {
+    position: relative;
+    display: block;
+    color: var(--shadeBlue);
+    font-size: 10em;
+    transform: translate(200%, 10%) rotate(5deg);
+    z-index: 7;
+    animation: umbrellaMove 3s linear infinite;
+}
+
+
+
+@keyframes blurry {
+    from {
+        filter: blur(5px);
+    }
+    to {
+        filter: blur(7px);
+    }
+}
+
+@keyframes rainFall {
+    0% {
+        
+        opacity: 0.9;
+    }
+
+    100% {
+    
+        opacity: 0.2;
+        transform: translateY(100vh);
+    }
+}
+
+
+
+
+@keyframes  handMove {
+    0% {
+        transform: translate(-750%, 140%)rotate(80deg);
+    }
+    50% {
+        transform: translate(-750%, 140%)rotate(70deg);
+    }
+
+    100% {
+        transform: translate(-750%, 140%)rotate(83deg);
+    }
+}
+@keyframes handMove2 {
+    0% {
+        transform: translate(750%, 140%)rotate(110deg);
+    }
+    50% {
+        transform: translate(750%, 140%)rotate(120deg);
+    }
+
+    100% {
+        transform: translate(750%, 140%)rotate(100deg);
+    }
+}
+
+@keyframes umbrellaMove {
+    0% {
+        transform: translate(20%, -10%) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(200%, -9%) rotate(10deg);
+    }
+
+    /*100% {
+        transform: translate(200%, -10%) rotate(5deg);
+    }*/
+}
+
