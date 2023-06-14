@@ -21,7 +21,7 @@
             <i class="fa fa-umbrella" id="umbrella"></i>
             <div id="head"></div>
             <div id="hair1"></div>
-            <div id="neck"></div>
+            <div id="godlike"></div>
             <div id="shirt"></div>
             <div id="belt"></div>
             <div id="hook"></div>
