@@ -1,4 +1,4 @@
-<!--created some changes-->
+<!--Created some changes-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +17,7 @@
         <div class="lamp"></div>
         <div class="lampPole"></div>
         <div class="moon"></div>
-        <div class="boy" id="boy">
+        <div class="boy" id="Girl">
             <i class="fa fa-umbrella" id="umbrella"></i>
             <div id="head"></div>
             <div id="hair1"></div>
@@ -25,7 +25,7 @@
             <div id="shirt"></div>
             <div id="belt"></div>
             <div id="hook"></div>
-            <div id="pant"></div>
+            <div id="Skirt"></div>
             <div id="armLeft"></div>
             <div id="armLeftFront"></div>
             <div id="armRight"></div>
